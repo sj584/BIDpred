@@ -26,6 +26,12 @@ print(align[0].seq)  # sequence of the first sequence in the alignment
 In **Rep_Antigen_PDB**, you can get the PDB file of Representative sequence in each MSA.
 Each file name corresponds to (PDB_ID)_(Antigen_chain).pdb
 
-In **csv**, you can get the filtered_dataset.csv and epitope_annotation.csv.
+In **csv**, you can get the 
+1. filtered_dataset.csv 
 filtered_dataset.csv is Data retrieved from SAbDab with filtering cutoff
+2. epitope_annotation.csv
 epitope_annotation.csv is annotated from Ab-Ag complex with 6 Angstrom distance
+3. train_csv
+train_csv contains immunodominance annotations of the training set (92 sets)
+5. test_csv
+test_csv contains immunodominance annotations of the test set (24 sets)
