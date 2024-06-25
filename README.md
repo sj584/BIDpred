@@ -70,3 +70,55 @@ In **csv**, you can get the
 - epitope_annotation.csv is annotated from Ab-Ag complex with 6 Angstrom distance
 - train_csv contains immunodominance annotations of the training set (92 sets)
 - test_csv contains immunodominance annotations of the test set (24 sets)
+
+
+# Prediction
+
+
+```python
+# predict the epitopes from pdb (fetched)
+python inference.py --pdb 1cfi
+```
+
+
+
+```python
+# for multiple inference... in bash
+for pdb in pdb1 pdb2 pdb3 pdb4 pdb5 pdb6 ... pdb10
+> do
+> python inference.py --pdb $pdb
+> done
+```
+
+
+```python
+# for inference using pdb file from local computer...
+# the pdb file must be located in Custom_PDB(default) directory 
+# or any directory you assign with --pdb_path
+python inference_CustomPDB.py --pdb 6FNZ
+```
+
+# Replication
+
+```python
+# simply evaluate the trained model(in checkpoint directory) on the epitope3d test set (45 PDB)
+python evaluate.py
+```
+
+```python
+# to train the models and save
+# in model training, we recommend using GPU. CPU work is quite slow.
+python train.py --model_save_dir models
+```
+
+
+```python
+# assign new directory with --model_checkpoint
+# python evaluate.py simply evaluate the models saved in checkpoint
+python evaluate.py --model_checkpoint models
+```
+
+Each python program contains more arguments.
+You can check with -h option
+
+ex) python inference.py/inference_CustomPDB.py/train.py/evaluate.py -h
