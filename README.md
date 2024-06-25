@@ -1,6 +1,6 @@
 # BIDpred
 
-# Installation (In Ubuntu 18.04, Ubuntu 20.04)
+# Installation (In Ubuntu 18.04, 20.04)
 1. Generate the conda environment
 ```python
 conda env create --file env.yaml --name BID
