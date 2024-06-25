@@ -1,5 +1,44 @@
 # BIDpred
 
+# Installation (In Ubuntu 18.04, Ubuntu 20.04)
+1. Generate the conda environment
+```python
+conda env create --file env.yaml --name BID
+conda activate BID 
+```
+ 
+2. Install related packages  
+```python
+pip install wget
+pip install biopython
+pip install biotite
+pip install fair-esm  
+sudo apt-get install dssp  # for generating RSA using Biopython
+```
+
+3. Install models
+```python
+# at first, it may take some time to download the esm-2, esm-if model  
+import torch
+_, _ = torch.hub.load("facebookresearch/esm:main", "esm2_t33_650M_UR50D") # load esm-2 model
+
+import esm
+_, _ = esm.pretrained.esm_if1_gvp4_t16_142M_UR50() # load esm-if model
+```
+
+
+# BUG FIX from esm
+
+ImportError: cannot import name 'esmfold_structure_module_only_8M' from 'esm.pretrained' (/home/{user}/anaconda3/envs/Bepitope/lib/python3.8/site-packages/esm/pretrained.py) 
+
+simply copy-paste the functions starting from esmfold_structure_module_only_8M into the pretrained.py
+(https://github.com/facebookresearch/esm/blob/2b369911bb5b4b0dda914521b9475cad1656b2ac/esm/pretrained.py#L274)
+
+or
+
+cp pretrained.py /home/{user}/anaconda3/envs/Bepitope/lib/python3.8/site-packages/esm/pretrained.py
+
+Then everything will be ok.
 
 # Dataset
 In **cluster_msa_annotation**, the dataset for train, test is available
