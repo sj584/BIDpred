@@ -1,6 +1,5 @@
 # BIDpred
-Statistical Analysis of B cell Immunodominance and
-Exploration of Deep Learning Prediction Method
+
 
 # Dataset
 In **cluster_msa_annotation**, the dataset for train, test is available
