@@ -21,17 +21,17 @@ from Bio import AlignIO
 align = AlignIO.read(file_path, "phylip")
 
 print(align[0].id)  # id of the first sequence in the alignment
-print(align[0].seq)  # sequence of the first sequence in the alignment
+print(align[0].seq)  # amino acid of the first sequence in the alignment
 ```
 In **Rep_Antigen_PDB**, you can get the PDB file of Representative sequence in each MSA.
 Each file name corresponds to (PDB_ID)_(Antigen_chain).pdb
 
 In **csv**, you can get the 
 1. filtered_dataset.csv </br>
-filtered_dataset.csv is Data retrieved from SAbDab with filtering cutoff
+>> filtered_dataset.csv is Data retrieved from SAbDab with filtering cutoff
 2. epitope_annotation.csv</br>
-epitope_annotation.csv is annotated from Ab-Ag complex with 6 Angstrom distance
+>> epitope_annotation.csv is annotated from Ab-Ag complex with 6 Angstrom distance
 3. train_csv</br>
-train_csv contains immunodominance annotations of the training set (92 sets)
+>> train_csv contains immunodominance annotations of the training set (92 sets)
 5. test_csv</br>
-test_csv contains immunodominance annotations of the test set (24 sets)
+>> test_csv contains immunodominance annotations of the test set (24 sets)
