@@ -2,7 +2,7 @@
 
 # Dataset
 In **cluster_msa_annotation**, the dataset for train, test is available
-Each name corresponses to (PDB_ID)_(Antigen_chain)_(Antibody_Hchain_Lchain).phy
+Each file name corresponds to (PDB_ID)_(Antigen_chain)_(Antibody_Hchain_Lchain).phy
 example. 1eo8_A_HL.phy, 3pnw_R_QP.phy
 
 Data curation
@@ -23,3 +23,4 @@ print(align[0].id)  # id of the first sequence in the alignment
 print(align[0].seq)  # sequence of the first sequence in the alignment
 ```
 In **Rep_Antigen_PDB**, you can get the PDB file of Representative sequence in each MSA.
+Each file name corresponds to (PDB_ID)_(Antigen_chain).pdb
