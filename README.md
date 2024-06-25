@@ -9,7 +9,7 @@ Data curation
 2. Within cluster (at least 4 elements), multiple sequence alignment (MSA) was generated using ClustalW
 3. Epitope was annotated in the MSA from antigen-antibody complex data (6 Angstrom)
 
-*Representative sequence is on the first row\n
+*Representative sequence is on the first row </br>
 *Epitopes are annotated as capital letter while non-epitopes are not.
 
 You can read the data using Biopython
