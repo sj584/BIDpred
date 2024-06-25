@@ -95,7 +95,7 @@ for pdb in pdb1 pdb2 pdb3 pdb4 pdb5 pdb6 ... pdb10
 # for inference using pdb file from local computer...
 # the pdb file must be located in Custom_PDB(default) directory 
 # or any directory you assign with --pdb_path
-python inference_CustomPDB.py --pdb 6FNZ
+python inference_customPDB.py --pdb 6FNZ
 ```
 
 # Replication
