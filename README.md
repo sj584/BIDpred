@@ -14,4 +14,7 @@ You can read the data using Biopython
 ```python
 from Bio import AlignIO
 align = AlignIO.read(file_path, "phylip")
+
+print(align[0].id)
+print(align[0].seq)
 ```
