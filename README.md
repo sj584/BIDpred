@@ -19,6 +19,6 @@ You can read the data using Biopython
 from Bio import AlignIO
 align = AlignIO.read(file_path, "phylip")
 
-print(align[0].id)
-print(align[0].seq)
+print(align[0].id)  # id of the first sequence in the alignment
+print(align[0].seq)  # sequence of the first sequence in the alignment
 ```
