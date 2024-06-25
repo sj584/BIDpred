@@ -8,7 +8,7 @@ example. 1eo8_A_HL.phy, 3pnw_R_QP.phy
 Data curation
 1. Antigen sequences were clustered using mmseq2 by sequence identity 70%.
 2. Within cluster (at least 4 elements), multiple sequence alignment (MSA) was generated using ClustalW
-3. Epitope was annotated in the MSA from antigen-antibody complex data (6 Angstrom)
+3. Epitopes were annotated in the MSA from antigen-antibody complex data (6 Angstrom)
 
 *Representative sequence is on the first row </br>
 *Epitopes are annotated as capital letter while non-epitopes are not.
