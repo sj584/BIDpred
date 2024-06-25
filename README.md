@@ -10,6 +10,8 @@ Data curation
 3. Epitope was annotated in the MSA from antigen-antibody complex data (6 Angstrom)
 
 You can read the data using Biopython
-# python
+
+'''python
 from Bio import AlignIO
 align = AlignIO.read(file_path, "phylip")
+'''
