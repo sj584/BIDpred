@@ -11,7 +11,7 @@ Data curation
 
 You can read the data using Biopython
 
-'''python
+```python
 from Bio import AlignIO
 align = AlignIO.read(file_path, "phylip")
-'''
+```
