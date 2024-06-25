@@ -1,5 +1,5 @@
 # BIDpred
-Statistical Analysis of B cell Immunodominance and </br>  
+Statistical Analysis of B cell Immunodominance and
 Exploration of Deep Learning Prediction Method
 
 # Dataset
