@@ -2,7 +2,8 @@
 
 # Dataset
 In cluster_msa_annotation, the dataset for train, test is available
-Each name corresponses to (PDB_ID)_(Antigen_chain)_(Antibody_Hchain_Lchain)
+Each name corresponses to (PDB_ID)_(Antigen_chain)_(Antibody_Hchain_Lchain).phy
+example. 1eo8_A_HL.phy, 3pnw_R_QP.phy
 
 Data curation
 1. Antigen sequences were clustered using mmseq2 by sequence identity 70%.
