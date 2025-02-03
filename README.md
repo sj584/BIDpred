@@ -1,6 +1,12 @@
 # BIDpred
 
 # Installation (In Ubuntu 18.04, 20.04)
+
+```python
+pip install "setuptools<58.0" # setuptools setting   
+pip install bioservices # wheels setting
+```
+
 1. Generate the conda environment
 ```python
 conda env create --file env.yaml --name BID
