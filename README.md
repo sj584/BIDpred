@@ -16,8 +16,8 @@ conda activate BID
 2. Install related packages  
 ```python
 pip install wget
-pip install biopython
-pip install biotite
+pip install biopython==1.83
+pip install biotite==0.40.0
 pip install fair-esm  
 sudo apt-get install dssp  # for generating RSA using Biopython
 ```
