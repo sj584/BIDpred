@@ -1,5 +1,4 @@
 # BIDpred
-Article can be found here <br>
 BIDpred: unraveling B cell Immunodominance hierarchical pattern using statistical feature discovery and deep learning prediction <br>
 Frontiers in immunology <br>
 https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2025.1646946/full
